@@ -6,7 +6,7 @@ library(ggplot2)
 url <- "https://api.open-meteo.com/v1/forecast?latitude=-33.8688&longitude=151.2093&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Australia%2FSydney"
 
 response <- GET(url)
-
+  
 weather_data <- fromJSON(content(response, "text"))
 
 daily <- weather_data$daily
