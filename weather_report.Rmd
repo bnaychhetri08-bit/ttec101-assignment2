@@ -4,7 +4,7 @@ author: "Binay Pantha Chhetri"
 date: "2026-05-26"
 
 # Weather Data Analysis Using Open-Meteo API
-
+   
 ## Introduction
 
 This project analyses weather forecast data collected from the Open-Meteo API for Sydney, Australia. The objective of the project is to demonstrate the application of data analytics techniques using R programming, including data collection, processing, visualisation, and interpretation. The dataset contains daily weather variables such as maximum temperature, minimum temperature, and rainfall. Through statistical analysis and visualisations, patterns and trends in weather conditions are identified. The project also demonstrates the use of web APIs, data manipulation using dplyr, and data visualisation using ggplot2 to generate meaningful insights from real-world weather data.
