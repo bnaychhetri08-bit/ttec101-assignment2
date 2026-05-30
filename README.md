@@ -4,7 +4,7 @@
 
 This project analyses weather forecast data collected from the Open-Meteo API for Sydney, Australia. The project demonstrates the use of R programming for API data retrieval, data processing, statistical analysis, and data visualisation.
 
-## Tools and Packages Used
+## Tools and Packages Used     
 
 * R
 * httr
