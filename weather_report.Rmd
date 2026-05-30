@@ -1,0 +1,72 @@
+---
+title: "Weather Data Analysis Using Open-Meteo API""
+author: "Binay Pantha Chhetri" 
+date: "2026-05-26"
+
+# Weather Data Analysis Using Open-Meteo API
+
+## Introduction
+
+This project analyses weather forecast data collected from the Open-Meteo API for Sydney, Australia. The objective of the project is to demonstrate the application of data analytics techniques using R programming, including data collection, processing, visualisation, and interpretation. The dataset contains daily weather variables such as maximum temperature, minimum temperature, and rainfall. Through statistical analysis and visualisations, patterns and trends in weather conditions are identified. The project also demonstrates the use of web APIs, data manipulation using dplyr, and data visualisation using ggplot2 to generate meaningful insights from real-world weather data.
+
+## Data Source
+
+The data used in this project was obtained from the Open-Meteo API, a free weather forecasting service that provides access to meteorological data through web requests. The API was selected because it offers reliable and structured weather information that can be easily accessed and processed using R. The dataset contains daily observations for Sydney, Australia, including maximum temperature, minimum temperature, and rainfall measurements. These variables were chosen because they provide useful information for identifying weather trends and analysing environmental conditions during the forecast period.
+
+## Methodology
+
+The weather data was collected using the Open-Meteo API through an HTTP request in R. The `httr` package was used to connect to the API, while the `jsonlite` package was used to convert the JSON response into a structured format suitable for analysis. The retrieved data included daily maximum temperature, minimum temperature, and rainfall values for Sydney.
+
+After collection, the data was converted into a data frame and processed using the `dplyr` package. Two new variables were created: average temperature and temperature range. Summary statistics were then calculated, including average temperature, highest temperature, lowest temperature, total rainfall, and average rainfall.
+
+Data visualisation was performed using the `ggplot2` package. Three charts were created to illustrate temperature trends, rainfall patterns, and the distribution of average temperatures. These visualisations assisted in identifying patterns and supporting the interpretation of results.
+
+## Data Analysis
+
+The summary statistics indicate that the average temperature during the forecast period remained relatively stable. The highest recorded maximum temperature was approximately 18.9°C, while the lowest minimum temperature was approximately 9.9°C. Total rainfall during the analysed period was limited, indicating generally dry weather conditions.
+
+Analysis of the temperature trend revealed moderate fluctuations across the forecast period. Temperatures initially declined before increasing and reaching a peak during the middle of the period. Following this increase, temperatures gradually decreased again. Despite these fluctuations, the overall temperature range remained relatively narrow, suggesting stable weather conditions.
+
+Rainfall observations showed that precipitation occurred on only a few days, with one day experiencing noticeably higher rainfall than the others. This pattern indicates that rainfall events were isolated rather than continuous. The distribution of average temperatures further confirmed that most observations were concentrated within a similar range, reflecting consistent weather conditions throughout the forecast period.
+
+## Visualisations
+
+### Figure 1: Maximum Temperature Trend
+
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/05_Temperature_Trend_Chart.png")
+```
+
+Figure 1 shows the daily maximum temperature trend in Sydney during the forecast period. Temperatures fluctuated moderately between days but remained within a relatively stable range. The highest temperature was observed during the middle of the forecast period before declining towards the end.
+
+### Figure 2: Daily Rainfall
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/06_Rainfall_Chart.png")
+```
+
+Figure 2 illustrates rainfall levels recorded during the forecast period. Rainfall occurred on only a few days, with one day experiencing noticeably higher precipitation than the others. This indicates that rainfall events were isolated rather than continuous.
+
+### Figure 3: Distribution of Average Temperature
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/07_Temperature_Distribution.png")
+```
+
+Figure 3 presents the distribution of average temperatures. Most temperature observations were concentrated within a narrow range, indicating relatively consistent weather conditions throughout the analysed period.
+
+## Key Findings
+
+### Insight 1: Stable Weather Conditions
+
+The analysis revealed that temperatures remained relatively stable throughout the forecast period. Although daily temperatures fluctuated, the overall range was moderate, indicating predictable weather conditions.
+
+### Insight 2: Limited Rainfall Activity
+
+Rainfall occurred on only a small number of days. Most days recorded little or no precipitation, suggesting generally dry weather conditions during the observation period.
+
+### Insight 3: Relationship Between Rainfall and Temperature
+
+Days with higher rainfall tended to coincide with lower temperatures. This suggests that precipitation may have contributed to temporary cooling effects during the forecast period.
+
+## Conclusion
+
+This project successfully demonstrated the process of collecting, processing, analysing, and visualising weather data using R and the Open-Meteo API. The results showed relatively stable temperature patterns with limited rainfall activity during the forecast period. Data visualisations and summary statistics helped identify important trends and supported the interpretation of weather conditions. Overall, the project highlighted the value of data analytics techniques in transforming raw weather data into meaningful insights that can support decision-making and understanding of environmental conditions.
